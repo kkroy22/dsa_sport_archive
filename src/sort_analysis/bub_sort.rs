@@ -1,7 +1,8 @@
-//! # sort_analysis
+//! # Bubble Sort Algorithm
 //!
 //! `sort_analysis` crate really not usefull in online Judge platform but this crate will ensure
 //! that you have all the materials that you need to learn about sorting algorithm complexities
+
 /// Bubble Sort algorithm in its most basic form
 /// 
 /// # Example
@@ -23,7 +24,17 @@ pub fn bubble_sort<T: PartialOrd>(v: &mut [T]) {
 }
 
 
+/// Bubble Sort algorithm with certain improrvment without changing the worst time complexity
+/// 
+/// # Example
+///
+/// ```
+/// let mut v = vec![4, 6, 1, 8, 11, 13, 3];
+/// dsa_sport::sort_analysis::bub_sort::bubble_sort_improved(&mut v);
+/// assert_eq!(v, vec![1,3,4,6,8,11,13])
+///```
 pub fn bubble_sort_improved<T: PartialOrd>(v: &mut [T]) {
+    /*! O(n^2) !*/
     for pass in 0..v.len() {
         let mut sorted = true;
         for i in 0..(v.len()-1)-pass {
