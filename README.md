@@ -19,6 +19,3 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-## License
-license = "MIT OR GPL-3.0 OR BSD-3-Clause"
-See [LICENSE-MIT](LICENSE-MIT) and [LICENSE-GLP-3.0](LICENSE-GLP-3.0), and [LICENSE-BSD-3-Clause](LICENSE-BSD-3-Clause) for details.
