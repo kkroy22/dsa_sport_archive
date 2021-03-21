@@ -1,6 +1,6 @@
 [package]
 name = "dsa_sport"
-version = "cuttlefish"
+version = "0.0.1"
 authors = ["Kiran Kumar Roy <kkroy22@gmail.com>"]
 edition = "2018"
 description = "crate of revision material for undergrads"
