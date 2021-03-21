@@ -40,22 +40,27 @@ impl<T> VecStack<T> {
         return self.sk_index == 0;
     }
 
+    pub fn top(&self) -> Option<&T> {
+        if self.is_empty() {
+            return None;
+        }
+        let ans = self.sk_ptr.get(self.sk_index -1);
+        return Some(ans.unwrap());
+    }
+
     pub fn push(&mut self, element: T) {
         self.sk_ptr.push(element);
         self.sk_index += 1;
     }
 
-    pub fn pop(&mut self) -> Option<T>
-    where
-        T: Copy,
+    pub fn pop(&mut self) -> Option<&T>
     {
         if self.is_empty() {
             return None;
         } else {
-            // remove the copy of element without deleting it from vector
-            let ans = Some(self.sk_ptr.get(self.sk_index));
             self.sk_index -= 1;
-            return Some(*(ans.unwrap().unwrap()));
+            let ans = self.sk_ptr.get(self.sk_index);
+            return Some(ans.unwrap());
         }
     }
 }
