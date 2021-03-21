@@ -1,11 +1,12 @@
 [package]
 name = "dsa_sport"
-version = "0.1.1"
+version = "cuttlefish"
 authors = ["Kiran Kumar Roy <kkroy22@gmail.com>"]
 edition = "2018"
 description = "crate of revision material for undergrads"
 license = "MIT OR GPL-3.0 OR BSD-3-Clause"
 readme = "README.md"
+repository = "https://github.com/kkroy22/dsa_sport"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]

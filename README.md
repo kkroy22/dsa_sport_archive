@@ -15,7 +15,10 @@ assert_eq!(list.len(), 3);
 ```
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
+
+## Version
+`The Greek and Latin words for leg and foot have given English the combining form -pod`
 
